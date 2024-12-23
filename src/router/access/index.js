@@ -1,5 +1,5 @@
-import express from "express";
-import accessServices from "../../services/accessServices.js";
+const express = require("express");
+const accessServices = require("../../services/accessServices.js");
 const router = express.Router();
 
 router.post("/login", async (req, res) => {
@@ -26,4 +26,4 @@ router.get('/', (req, res) => {
     res.json({ message: "Access router" });
 })
 
-export default router;
+module.exports = router;

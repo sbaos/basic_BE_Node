@@ -1,7 +1,5 @@
-import jwt from "jsonwebtoken";
-import { UnauthorizedError } from "../helpers/errorResponse.js";
-import { Request, Response, NextFunction } from "express";
-
+const jwt = require("jsonwebtoken");
+const { UnauthorizedError } = require("../helpers/errorResponse.js");
 
 const authenticateToken = async (req, res, next) => {
     const token = req.cookies.token;

@@ -1,5 +1,5 @@
+const dotenv = require("dotenv");
 const { Pool } = require("pg");
-import dotenv from "dotenv";
 dotenv.config();
 
 let db;
@@ -20,15 +20,15 @@ try {
 }
 
 
-db.connect()
-    .then(() => console.log("Connected to PostgreSQL"))
-    .catch((err) => {
-        console.error("Connection error", err.stack);
-    });
+// db.connect()
+//     .then(() => console.log("Connected to PostgreSQL"))
+//     .catch((err) => {
+//         console.error("Connection error", err.stack);
+//     });
 
 // setInterval(() => {
 //     db.query("SELECT * FROM users");
 //     console.log("Query DBS...")
 // }, 60000);
 
-export default db;
+module.export = db;

@@ -1,9 +1,10 @@
-import express from 'express';
-import cors from 'cors';
-import router from './router/routeV1.js';
-import configEnv from './configs/configEnv.js';
+const express = require('express');
+const cors = require('cors');
+const router = require('./router/routeV1.js');
+const configEnv = require('./configs/configEnv.js');
+const dotenv = require("dotenv");
 const app = express();
-const port = configEnv.app.port || 3900;
+const port = process.env.PORT || 3900;
 
 
 app.use(

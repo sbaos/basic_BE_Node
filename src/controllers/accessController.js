@@ -1,7 +1,6 @@
-import AccessService from "../services/accessServices";
-import { Request, Response } from "express";
-import { OK, Created } from "../helpers/successResponse";
-import { token } from "morgan";
+const AccessService = require("../services/accessServices");
+const { Request, Response } = require("express");
+const { OK, Created } = require("../helpers/successResponse");
 
 class AccessController {
     static async SignUp(req, res) {
@@ -29,4 +28,4 @@ class AccessController {
     }
 }
 
-export default AccessController;
+module.export = AccessController;

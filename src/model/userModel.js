@@ -1,5 +1,5 @@
-import db from "../dbs/initDB.js";
-import bcrypt from "bcrypt";
+const db = require("../dbs/initDB.js");
+const bcrypt = require("bcrypt");
 
 
 class AccessModel {
@@ -25,4 +25,4 @@ class AccessModel {
 
 }
 
-export default AccessModel;
+module.export = AccessModel;

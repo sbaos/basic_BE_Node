@@ -1,4 +1,4 @@
-import { BadRequestError, ForbiddenError, NotFoundError } from "../helper/errorResponse.js";
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import dotenv from "dotenv";
+const { BadRequestError, ForbiddenError, NotFoundError } = require("../helpers/errorResponse.js");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const dotenv = require("dotenv");

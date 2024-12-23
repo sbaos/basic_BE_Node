@@ -1,8 +1,9 @@
-import { BadRequestError, ForbiddenError, NotFoundError } from "../helpers/errorResponse.js";
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import dotenv from "dotenv";
-import userModel from "../model/userModel";
+const { BadRequestError, ForbiddenError, NotFoundError } = require("../helpers/errorResponse.js");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const dotenv = require("dotenv");
+const userModel = require("../model/userModel.js");
+
 
 dotenv.config();
 
@@ -44,4 +45,4 @@ class AccessServices {
 
 }
 
-export default AccessServices;
+module.export = AccessServices;

@@ -1,6 +1,4 @@
-import { Response } from "express";
-
-
+const { Response } = require("express");
 class SuccessResponse {
     message;
     status;
